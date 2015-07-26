@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+#redball{
+position: absolute;
+right: 90px;
+top: 100px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script>
+function moveright(){
+  var elem = $("#redball");
+  var pos = elem.offset();
+  pos.left = pos.left + 50;
+  elem.css({ top: pos.top+'px', left: pos.left+'px' });
+}
+function moveleft(){
+  var elem = $("#redball");
+  var pos = elem.offset();
+  pos.left = pos.left - 50;
+  elem.css({ top: pos.top+'px', left: pos.left+'px' });
+}
+function grow(){
+	var elem = $("#gino");
+	elem.css("font-size","100px");
+}
+function shrink(){
+	var elem = $("#gino");
+	elem.css("font-size","25px");
+}
+function fadeout(){
+	var elem = $("#gino");
+	elem.fadeOut();
+}
+function fadein(){
+	var elem = $("#gino");
+	elem.fadeIn();
+}
+
+</script>
+</head>
+<body>
+<center>
+<p id="gino">GINO GREEN</p>
+</center>
+<img id='redball' src='http://4.bp.blogspot.com/-iedt6pJj_5s/VEqN90oTZGI/AAAAAAAAAoc/QlH5RHWrtUA/s1600/Ball.gif'/>
+<center>
+<button onclick="moveright();"style="background-color:lightgreen">TO THE RIGHT TO THE RIGHT</button>
+<button onclick="moveleft();"style="background-color:darkgreen">TO THE LEFT TO THE LEFT</button>
+<button onclick="grow();"style="background-color:purple">HULK</button>
+<button onclick="shrink();"style="background-color:lightblue">BRUCE</button>
+<button onclick="fadeout();"style="background-color:red">LEAVE</button>
+<button onclick="fadein();"style="background-color:brown">COME BACK</button>
+</center>
+
+<script>
+
+
+function changeColor(id)
+{
+  document.getElementById(id).style.color = "orange"; // forecolor
+  document.getElementById(id).style.backgroundColor = "blue"; // backcolor
+}
+</script>
+
+<div id="myid"></div>
+
+<center><a href="#" onclick="changeColor('gino'); return true;">CHANGE TITLE COLOR</a></center>
+
+</script>
+</body>
+</html>
