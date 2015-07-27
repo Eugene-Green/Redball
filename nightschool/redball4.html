@@ -116,33 +116,34 @@ function moveoctagon() {
 </script>
 <script>
 function moveupagain() {
-if (redball.top>40){
-moveup();
+if (redball.top>50){
+redball.top=redball.top -10;
 }
 else {
 alert("WHAT THE HELL YOU DOIN!")
 }
 }
-function moverightagain(){
-if (redball.left>550){
-alert("GET BACK CROSS THE GUN LINE!")
+
+function movedownagain() {
+if (redball.top>300){
+alert("BACK CROSS THE GUN LINE!")
 }
 else {
-moveright();
+redball.top=redball.top +10;
 }
+} 
 
+function moveleftagain() {
+if (redball.right>50){
+alert("MOON WALK YO ASS THE OTHER WAY")
+}
+else {
+redball.right=redball.right +10;
+}
 } 	
 </script>
 
-<script>
-function moverightsomemo() 
-	{if (redball.left=redball.left +10 > 1000); 
-	{alert (AW HELL NAW)
-	}
-	redball.left=redball.left +10;
-}
-	
-</script>
+
 </head>
 <body style="background-color:black">
 
@@ -150,17 +151,15 @@ function moverightsomemo()
 
 <img id='redball' src="http://media1.giphy.com/media/tWshrlJy2A1z2/giphy.gif" HEIGHT="300" WIDTH="800" BORDER="10">
 
-<a id="movebutt">
-<button onclick="moverightagain();">moverightsomemo </button>
+<a id="movebutton">
 <button onclick="moveup();">Up</button>
-<button onclick="moverightagain();">right</button>
-<button onclick="moveupagain();">up</button>
+<button onclick="moveright();">right</button>
 <button onclick="movedown();">Down</button>
 <button onclick="moveleft();">Left</button>
 <button onclick="moveright();">Right</button>
 <button onclick="myFunction();">What's Up</button>
 
-</a>
+
 
 <button onclick="moveupright();">Up Right</button>
 <button onclick="moveupleft();">Up Left</button>
@@ -172,8 +171,13 @@ function moverightsomemo()
 <button onclick="movesquare();">Square</button>
 <button onclick="movetriangle();">Triangle</button>
 <button onclick="moveoctagon();">Octagon</button>
+
+
 <button onclick="moverightagain();">ALERT RIGHT</button>
 <button onclick="moveupagain();">ALERT UP</button>
+<button onclick="movedownagain();">ALERT DOWN</button>
+<button onclick="moveleftagain();">ALERT LEFT</button>
 
+</a>
 </div>
 </body>
