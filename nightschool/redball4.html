@@ -2,6 +2,7 @@
 <head>
 <link href="Redball.css" rel="stylesheet" type="text/css">
 <script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+
 <script>
 
 function moveup() {
@@ -133,12 +134,21 @@ redball.top=redball.top +10;
 }
 } 
 
-function moveleftagain() {
-if (redball.right>50){
-alert("MOON WALK YO ASS THE OTHER WAY")
+function moverightagain() {
+if (redball.left>550){
+alert("MOONWALK YO ASS BACK THE OTHER WAY!")
 }
 else {
-redball.right=redball.right +10;
+redball.left=redball.left +10;
+}
+} 	
+
+function moveleftagain() {
+if (redball.left<0){
+alert("MOONWALK YO ASS BACK THE OTHER WAY!")
+}
+else {
+redball.left=redball.left -10;
 }
 } 	
 </script>
@@ -147,37 +157,52 @@ redball.right=redball.right +10;
 </head>
 <body style="background-color:black">
 
-<div id=console>
 
 <img id='redball' src="http://media1.giphy.com/media/tWshrlJy2A1z2/giphy.gif" HEIGHT="300" WIDTH="800" BORDER="10">
 
-<a id="movebutton">
-<button onclick="moveup();">Up</button>
-<button onclick="moveright();">right</button>
-<button onclick="movedown();">Down</button>
-<button onclick="moveleft();">Left</button>
-<button onclick="moveright();">Right</button>
-<button onclick="myFunction();">What's Up</button>
+
+<div id="border"style="border:thin solid white">
+<style>
+#border {
+width: 90px;
+height: 710px;
+left: 0px;
+margin:0 auto;
+float: left;
+}
+
+#redball {
+width: 800px;
+left: 600px;
+margin:200;
+}
+</style>
+
+<br><button onclick="moveup();">Up</button></br>
+<br><button onclick="moveright();">right</button></br>
+<br><button onclick="movedown();">Down</button></br>
+<br><button onclick="moveleft();">Left</button></br>
+<br><button onclick="moveright();">Right</button></br>
+<br><button onclick="myFunction();">What's Up</button></br>
 
 
 
-<button onclick="moveupright();">Up Right</button>
-<button onclick="moveupleft();">Up Left</button>
-<button onclick="movedownright();">Down Right</button>
-<button onclick="movedownleft();">Down Left</button>
+<br><button onclick="moveupright();">Up Right</button></br>
+<br><button onclick="moveupleft();">Up Left</button></br>
+<br><button onclick="movedownright();">Down Right</button></br>
+<br><button onclick="movedownleft();">Down Left</button></br>
 
 
 
-<button onclick="movesquare();">Square</button>
-<button onclick="movetriangle();">Triangle</button>
-<button onclick="moveoctagon();">Octagon</button>
+<br><button onclick="movesquare();">Square</button></br>
+<br><button onclick="movetriangle();">Triangle</button></br>
+<br><button onclick="moveoctagon();">Octagon</button></br>
 
 
-<button onclick="moverightagain();">ALERT RIGHT</button>
-<button onclick="moveupagain();">ALERT UP</button>
-<button onclick="movedownagain();">ALERT DOWN</button>
-<button onclick="moveleftagain();">ALERT LEFT</button>
+<br><button onclick="moverightagain();">ALERT RIGHT</button></br>
+<br><button onclick="moveupagain();">ALERT UP</button></br>
+<br><button onclick="movedownagain();">ALERT DOWN</button></br>
+<br><button onclick="moveleftagain();">ALERT LEFT</button></br>
 
-</a>
 </div>
 </body>
