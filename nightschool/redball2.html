@@ -40,30 +40,30 @@ function moveright() {
 <script>						 
 
 function moveupright() {
-	redball.top=redball.top -10;
-	redball.left=redball.left +10;
+	moveup();
+moveright();
 }
 </script>
 
 <script> 
 
 function movedownleft() {
-	redball.top=redball.top +10;
-	redball.left=redball.left -10;
+	movedown();
+	moveleft();
 }
 </script>
 	
 <script> 
 function movedownright() {
-	redball.top=redball.top +10;
-	redball.left=redball.left +10;
+	movedown;
+moveleft();
 }
 </script>	
 
 <script> 
 function moveupleft() {
-	redball.top=redball.top -10;
-	redball.left=redball.left -10;
+	moveup();
+moveleft();
 }
 </script>
 
@@ -100,110 +100,24 @@ function movesquare() {
 		moveup();
 		moveup();
 		moveup();
-		moveup();		
+		moveup();
+		moveright();
+		moveright();		
+		moveright();		
+		moveright();		
+		moveright();		
+		moveright();		
+		moveright();		
+		moveright();		
+		
 }
 
 </script>
 
-<script> 
-function movetriangle() {
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-}
+
 </script>	
 
-<script>
-function moveoctagon() {
-	moveright();
-	moveright();
-	moveright();
-	moveright();
-	moveright();
-	moveright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedownright();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedown();
-	movedownleft();
-	movedownleft();
-	movedownleft();
-	movedownleft();
-	movedownleft();
-	movedownleft();
-	movedownleft();
-	movedownleft();
-	movedownleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveleft();
-	moveupleft();
-	moveupleft();
-	moveupleft();
-	moveupleft();
-	moveupleft();
-	moveupleft();
-	moveupleft();
-	moveupleft();
-	moveupleft();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveup();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-	moveupright();
-}
-</script>	
+
 </head>
 <body style="background-color:black">
 
@@ -212,13 +126,14 @@ function moveoctagon() {
 <img id='redball' src="http://media1.giphy.com/media/tWshrlJy2A1z2/giphy.gif" HEIGHT="300" WIDTH="800" BORDER="10">
 
 <a id="movebutt">
+
 <button onclick="moveup();">Up</button>
 <button onclick="movedown();">Down</button>
 <button onclick="moveleft();">Left</button>
 <button onclick="moveright();">Right</button>
 <button onclick="myFunction();">What's Up</button>
 
-
+</a>
 
 <button onclick="moveupright();">Up Right</button>
 <button onclick="moveupleft();">Up Left</button>
@@ -228,9 +143,7 @@ function moveoctagon() {
 
 
 <button onclick="movesquare();">Square</button>
-<button onclick="movetriangle();">Triangle</button>
-<button onclick="moveoctagon();">Octagon</button>
-</a>
+
 
 </div>
 </body>
