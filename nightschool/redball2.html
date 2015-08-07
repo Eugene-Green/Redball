@@ -56,14 +56,14 @@ function movedownleft() {
 <script> 
 function movedownright() {
 	movedown;
-moveleft();
+	moveright();
 }
 </script>	
 
 <script> 
 function moveupleft() {
 	moveup();
-moveleft();
+	moveleft();
 }
 </script>
 
@@ -99,25 +99,128 @@ function movesquare() {
 		moveup();
 		moveup();
 		moveup();
-		moveup();
-		moveup();
-		moveright();
-		moveright();		
-		moveright();		
-		moveright();		
-		moveright();		
-		moveright();		
-		moveright();		
-		moveright();		
-		
+					
 }
 
 </script>
 
+<script> 
+function movetriangle() {
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
 
+
+
+}
 </script>	
 
+<script>
+function moveoctagon() {
+	movedownright();
+	movedownright();
+	movedownright();
+	movedownright();
+	movedownright();
+	movedownright();
+	movedownright();
+	movedownright();
+	movedownright();
+	movedown();
+	movedown();
+	movedown();
+	movedown();
+	movedown();
+	movedown();
+	movedown();
+	movedown();
+	movedown();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	movedownleft();
+	moveleft();
+	moveleft();
+	moveleft();
+	moveleft();
+	moveleft();
+	moveleft();
+	moveleft();
+	moveleft();
+	moveleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();
+	moveupleft();	
+	moveup();
+	moveup();
+	moveup();
+	moveup();
+	moveup();
+	moveup();
+	moveup();
+	moveup();
+	moveup();
+	moveupright();
+	moveupright();
+	moveupright();
+	moveupright();
+	moveupright();
+	moveupright();
+	moveupright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
+	moveright();
 
+}
+</script>
 </head>
 <body style="background-color:black">
 
@@ -142,6 +245,9 @@ function movesquare() {
 
 
 
+<button onclick="movesquare();">Square</button>
+<button onclick="movetriangle();">Triangle</button>
+<button onclick="moveoctagon();">Octagon</button>
 
 
 </div>
